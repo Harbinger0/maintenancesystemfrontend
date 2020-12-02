@@ -1,0 +1,32 @@
+<p>viewbookings works!</p>
+<div class="container">
+  <h2>Booking List</h2>
+  <p>Use action to perform crud operation</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Booking Id</th>
+        <th>Maintenance Id</th>
+        <th>User Id</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1000</td>
+        <td>2000</td>
+        <td>3000</td>
+        <td>4000</td>
+        <td>5000</td>
+        <td>
+          <!-- <button type="button" class="btn btn-danger">Delete</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-primary">Edit</button>&nbsp;&nbsp; -->
+          <button type="button" class="btn btn-info">View</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-success" (click)= "goToCreateBooking()">Create Booking</button>
+</div>

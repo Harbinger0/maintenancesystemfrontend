@@ -9,6 +9,8 @@ import { MaintenancelistComponent } from './maintenancelist/maintenancelist.comp
 import { RegisterComponent } from './register/register.component';
 import { ViewmaintenanceComponent } from './viewmaintenance/viewmaintenance.component';
 
+import { ViewbookingsComponent } from './viewbookings/viewbookings.component';
+import { CreatebookingComponent } from './createbooking/createbooking.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
@@ -22,6 +24,9 @@ const routes: Routes = [
   {path: 'editmaintenance', component: EditmaintenanceComponent},
   {path: 'viewmaintenance/:maintenanceId', component: ViewmaintenanceComponent},
   {path: 'viewmaintenance', component: ViewmaintenanceComponent}
+  {path: '', component: ViewbookingsComponent},
+  {path: 'createbooking', component: CreatebookingComponent},
+  {path: 'viewbookings', component: ViewbookingsComponent}
 ];
 
 @NgModule({

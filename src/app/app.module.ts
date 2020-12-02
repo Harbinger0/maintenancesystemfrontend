@@ -14,6 +14,9 @@ import { MaintenancelistComponent } from './maintenancelist/maintenancelist.comp
 import { EditmaintenanceComponent } from './editmaintenance/editmaintenance.component';
 import { ViewmaintenanceComponent } from './viewmaintenance/viewmaintenance.component';
 
+import { CreatebookingComponent } from './createbooking/createbooking.component';
+import { ViewbookingsComponent } from './viewbookings/viewbookings.component';
+import { UpdatebookingComponent } from './updatebooking/updatebooking.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +28,9 @@ import { ViewmaintenanceComponent } from './viewmaintenance/viewmaintenance.comp
     MaintenancelistComponent,
     EditmaintenanceComponent,
     ViewmaintenanceComponent
+    CreatebookingComponent,
+    ViewbookingsComponent,
+    UpdatebookingComponent
   ],
   imports: [
     BrowserModule,

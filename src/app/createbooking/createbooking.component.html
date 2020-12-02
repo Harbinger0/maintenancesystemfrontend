@@ -1,0 +1,37 @@
+<p>createbooking works!</p>
+<p>Create Booking</p>
+<div class="container">
+  <h2>Create New Booking</h2>
+
+  <form #createbooking= "ngForm" (ngSubmit)= "createbookingformsubmit()">
+    {{booking | json}}
+    <div class="form-group">
+      <label for= "maintenanceId">MaintenanceId:</label>
+      <select (change)="selectChangeHandler($event)" class="form-control" required [(ngModel)]="booking.maintenanceId" name="maintenanceId">
+        <option value="select maintenanceId">Select MaintenanceId</option>
+        <option value="001">001</option>
+        <option value="002">002</option>
+        <option value="003">003</option>
+        <option value="004">004</option>
+        <option value="005">005</option>
+      </select>
+      <!-- <input type="text" class="form-control" required [(ngModel)]="booking.maintenanceId" name="maintenanceId"> -->
+    </div>
+    <div class="form-group">
+      <label for= "userId">UserName:</label>
+      <input type="text" class="form-control" required [(ngModel)]="booking.userId" name="userId">
+    </div>
+    <div class="form-group">
+      <label for= "addressId">Address:</label>
+      <input type="text" class="form-control" required [(ngModel)]="booking.address" name="address">
+    </div>
+    <div class="form-group">
+      <label for= "phone">Phone:</label>
+      <input type="text" class="form-control" required [(ngModel)]="booking.phone" name="phone">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+    <!-- <button type="button" class="btn btn-primary" (click)= "gotolist()">BACK</button> -->
+
+  </form>
+</div>
